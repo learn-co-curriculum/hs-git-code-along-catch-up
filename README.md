@@ -11,11 +11,9 @@ The goals of the workshop are to get you comfortable with git. Git is a distribu
 
 So what does that mean? Version control is a way to save the history of your work. At every point while writing your code that something works successfully, you'll want to make sure to save that point. Git keeps track of all of those moments that you save. Imagine you keep working, and suddenly EVERYTHING is broken. What would you do? If you used git and saved your work along the way, you could essentially rewind your code history to a working version.
 
-We use [Github](https://github.com/) to store all of our code. Github is a web-based software for hosting your code, as well as version control, through git. We're going to be using the accounts we made during environment setup for all of our lab work, as well as any projects we may be working on.
-
 ### So let's actually start a project.
 
-1. First things first, we need to create directory for our project on our computers that will hold our code. It's considered best practice to hold single projects in their own directories. You wouldn't want to just have everything floating separately on your desktop. Let's make a directory for our project and `cd` into it:
+1. First things first, we need to create directory for our project on our computer that will hold our code. It's considered best practice to hold single projects in their own directories. You wouldn't want to just have everything floating separately on your desktop. Let's make a directory for our project and `cd` into it:
 
 `mkdir my_website`
 `cd my_website`
@@ -24,14 +22,14 @@ We use [Github](https://github.com/) to store all of our code. Github is a web-b
 
 `git init` 
 
-`git init` creates a `.git` file in your new git project, which contains all the information git needs to sync the local version of your project (the one on your personal computer), with the version on github.com
+`git init` creates a `.git` file in your new git project, which contains all the information git needs to sync the local version of your project (the one on your personal computer), with the version on github.com. You'll learn more about github in a minute.
 
-3. Now we're going to create a `README.md` file. A README is a considered best practices, and we should make one for every project we work on. It tells anyone that is looking at your project exactly what it is that they're looking at, and potentially how to use it. Notice all the instructions for this code-along are in a `README.md`. Let's make a `README.md`, open it, and include a few instructions...
+3. Now we're going to create a `README.md` file. Including a README for your project is considered best practice, and we should make one for every project we work on. It tells anyone that is looking at your project exactly what it is that they're looking at, and potentially how to use it. Notice all the instructions for this code-along are in a `README.md`. Let's make a `README.md`, open it, and include a few instructions...
 
 `touch README.md`
 `subl README.md` 
 
-"This is my personal portfolio. This site will include contact information, a personal bio, and links to all of my work"
+Type in something like this: "This is my personal portfolio. This site will include contact information, a personal bio, and links to all of my work."
 
 4. Now let's see if git noticed that we made changes to our `README.md`. `git status` tells us what files we have changed. It keeps track of files in two different ways, files that are not staged for commit, and files that are staged for committing.
 
@@ -41,6 +39,36 @@ We use [Github](https://github.com/) to store all of our code. Github is a web-b
 `git commit -m "I added my personal site readme"`.
 
 7. Now that git knows about our files, we're going to want to put it up on Github.com, so everyone can see what we've been working on, and if anything ever happens to our computers, our code is still accessible. 
+
+We use [Github](https://github.com/) to store all of our code and share it with others. Github is a web-based software for hosting your code, as well as version control, through git. Go to Github, and fill out the form to create a username and click signup. You will need to then check your email to verify your new account by clicking a link in an email.
+
+Next we'll need to set up your SSH key. 
+
+### Setting Up Github SSH Keys
+
+An SSH key is how github can identify you without you having to enter your username and password every single time you want to push code up to the server. Github has a great online documention [here](https://help.github.com/articles/generating-ssh-keys).
+
+So the first thing you'll need to do is open terminal and make sure you're at your root directory. It will look like `~`. If you're not there, `cd ~` will move you to the root directory.
+
+Then we want to look and see if we have a .ssh directory. `ls -la` will show you all the hidden files. If you don't even have a `.ssh` directory, you can make it `mkdir .ssh`
+
+Now we need to generate the SSH key, `ssh-keygen -t rsa -C "your_email@example.com"`. You'll need to enter the same email address that you used to set up your github account between the quotation marks.
+
+You'll get prompted to type the password to your computer twice (the letters won't actually show up when you type. Don't worry, it's just for security purposes).
+
+Once the SSH key generation is done, you'll enter `ssh-add ~/.ssh/id_rsa`
+
+Then `pbcopy < ~/.ssh/id_rsa.pub` which just adds your SSH key to your clipboard.
+
+Then you'll need to go to your github account online, and in the top right corner select Account Settings (the symbol with the wrench). In the left toolbar, you'll select SSH Keys. Then you'll select `Add SSH Key`.
+
+You'll enter a name of `Github SSH` and then paste your SSH key into the `key` field. Then you'll click the green `Add Key` button.
+
+After that, you'll want to go back to terminal and verify that you successfull added the SSH key, `ssh -T git@github.com`. You should get back `Hi username! You've successfully authenticated, but GitHub does not provide shell access.`
+
+If you have trouble with the steps below, don't worry! We'll help you get set up in the next class. Keep going for more git practice (you can skip the Github steps) and there are resources below that you can use for more practice with git. 
+
+###Setting up your project in Github
 
 Because this is a new project, we'll need to set up our remote repository, aka the version located on github.com. We need to go to https://github.com, and click the `+` located in the top right corner. We'll select to create a new repository. We'll be directed to a page that let's us fill out information about our new repository. I like to keep my repository name consistent with what I named my directory on my computer. In this case I'd name it "personal_site". The description is optional, but I'll go ahead and fill out "This is my online portfolio". You can now either chose to make your repositories public or private. I typically make all of my repositories public, so everyone can see it. Open source contributions are incredibly valuable in the tech community. It allows other developers to learn from your work. It also creates a nice history of your work, so potentially down the line when you're looking for internships or jobs, employers can get a good look at all the code you've written. You also have to pay for private repositories, so we'll go ahead and keep it public. And now we'll click `Create Repository`.
 
@@ -72,6 +100,7 @@ This is the only time we'll enter this exact command, becuase it's the first tim
 12. `git log` is a powerful command that lets you see the history of all your commits. That's also part of why we like to include commit messages. Imagine you're working on a project with 5 other developers. Wouldn't you want them to be able to read a clear and concise message as to what you added to the code base and why? The 7 characters in front of your commit message is the SHA. The SHA is basically the unique identifier of that specific commit.
 
 13. So far, we've been working on what's considered the `master` branch. Master should always be the stable working version of your code. You never want to break master. This is considered a standard workflow, and is especially important to remember if you are working on a project with more than one developer. So where do you do your work then if you have to keep master stable? We create feature branches. 
+
 First, let's confirm we're on master. `git branch` is the command to check your branch location. It's like `pwd` for git.
 
 So now let's create our new feature branch, and then switch to it. To do this, we type `git checkout -b <branch-name>`. I'm going to name my branch "header", because I'm going to work on a header feature for my site. Now if we check the branch, it should tell us we're on the header branch.
@@ -104,4 +133,4 @@ There are two options for working on a project with someone else: forking and cl
 
 <!-- After they complete the lab... -->
 
-20. Now that you completed your lab, make sure it's all pushed up to your version of the repository on github. After that, we're going to create a pull request. A pull request is the best practice for submitting contribution of work to an open source project. To create a pull request, go to your version of the repository on your github account. We'll click the green button in the top left corner. On the next page, we'll want to enter a comment for the pull request, "completed lab, all tests pass" and click submit. This is how I'll be able to review your work and give you feedback on your code. 
+20. Now that you completed your lab, make sure it's all pushed up to your version of the repository on github. After that, we're going to create a pull request. A pull request is the best practice for submitting contribution of work to an open source project. To create a pull request, go to your version of the repository on your github account. We'll click the green button in the top left corner. On the next page, we'll want to enter a comment for the pull request, "completed lab" and click submit. This is how I'll be able to review your work and give you feedback on your code. 
