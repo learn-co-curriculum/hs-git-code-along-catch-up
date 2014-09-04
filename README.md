@@ -113,7 +113,7 @@ So now that we've learned how to start and work on our own projects, let's learn
 
 There are two options for working on a project with someone else: forking and cloning. Cloning means your going to make an exact replica of the project on your computer, and it's going to point to that specific remote location. If you committed a change on master, it would show on master in their repository. Forking creates an exact replica of the project in your github account.
 
-Let's fork this lab https://github.com/flatiron-school-curriculum/find-missing-pet by clicking the `Fork` button in the top right corner. When we do that, we notice the location of the new forked repository is vicfriedman/find-missing-pet. So now that it exists on my github account, we have to clone the project to get it on my computer.
+Let's fork this lab https://github.com/flatiron-school-curriculum/hs-ruby-strings-todo by clicking the `Fork` button in the top right corner. When we do that, we notice the location of the new forked repository is vicfriedman/find-missing-pet. So now that it exists on my github account, we have to clone the project to get it on my computer.
 
 `git clone git@github.com:vicfriedman/hs-ruby-strings-todo.git`
 
