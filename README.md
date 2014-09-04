@@ -40,33 +40,7 @@ Type in something like this: "This is my personal portfolio. This site will incl
 
 7. Now that git knows about our files, we're going to want to put it up on Github.com, so everyone can see what we've been working on, and if anything ever happens to our computers, our code is still accessible. 
 
-We use [Github](https://github.com/) to store all of our code and share it with others. Github is a web-based software for hosting your code, as well as version control, through git. Go to Github, and fill out the form to create a username and click signup. You will need to then check your email to verify your new account by clicking a link in an email.
-
-Next we'll need to set up your SSH key. 
-
-### Setting Up Github SSH Keys
-
-An SSH key is how github can identify you without you having to enter your username and password every single time you want to push code up to the server. Github has a great online documention [here](https://help.github.com/articles/generating-ssh-keys).
-
-So the first thing you'll need to do is open terminal and make sure you're at your root directory. It will look like `~`. If you're not there, `cd ~` will move you to the root directory.
-
-Then we want to look and see if we have a .ssh directory. `ls -la` will show you all the hidden files. If you don't even have a `.ssh` directory, you can make it `mkdir .ssh`
-
-Now we need to generate the SSH key, `ssh-keygen -t rsa -C "your_email@example.com"`. You'll need to enter the same email address that you used to set up your github account between the quotation marks.
-
-You'll get prompted to type the password to your computer twice (the letters won't actually show up when you type. Don't worry, it's just for security purposes).
-
-Once the SSH key generation is done, you'll enter `ssh-add ~/.ssh/id_rsa`
-
-Then `pbcopy < ~/.ssh/id_rsa.pub` which just adds your SSH key to your clipboard.
-
-Then you'll need to go to your github account online, and in the top right corner select Account Settings (the symbol with the wrench). In the left toolbar, you'll select SSH Keys. Then you'll select `Add SSH Key`.
-
-You'll enter a name of `Github SSH` and then paste your SSH key into the `key` field. Then you'll click the green `Add Key` button.
-
-After that, you'll want to go back to terminal and verify that you successfull added the SSH key, `ssh -T git@github.com`. You should get back `Hi username! You've successfully authenticated, but GitHub does not provide shell access.`
-
-If you have trouble with the steps below, don't worry! We'll help you get set up in the next class. Keep going for more git practice (you can skip the Github steps) and there are resources below that you can use for more practice with git. 
+We use [Github](https://github.com/) to store all of our code and share it with others. You should already have set up a Github account on day one of classes.  
 
 ###Setting up your project in Github
 
