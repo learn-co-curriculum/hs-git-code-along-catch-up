@@ -40,7 +40,7 @@ Type in something like this: "This is my personal portfolio. This site will incl
 
 7. Now that git knows about our files, we're going to want to put it up on Github.com, so everyone can see what we've been working on, and if anything ever happens to our computers, our code is still accessible. 
 
-We use [Github](https://github.com/) to store all of our code and share it with others. You should already have set up a Github account on day one of classes.  
+We use [Github](https://github.com/) to store all of our code and share it with others. You should already have set up a Github account on day one of classes. 
 
 ###Setting up your project in Github
 
@@ -58,7 +58,7 @@ Because this is a new project, we'll need to set up our remote repository, aka t
 
 `git push -u origin master`
 
-This is the only time we'll enter this exact command, becuase it's the first time we're pushing our code to the server for this particular project. `push` is saying, go on code, get on up there. The `-u` means "upstream", which is just saying to go up to the github repository. 
+This is the only time we'll enter this exact command, becuase it's the first time we're pushing our code to the server for this particular project. `push` is saying, go on code, get on up there. The `-u` means "upstream", which is just saying to go up to the github repository. If you get a message prompting you to type in yes/no, type in yes.
 
 10. Let's go ahead and make the `index.html` page of our site.
 
