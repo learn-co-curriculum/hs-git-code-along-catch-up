@@ -107,7 +107,7 @@ We decide that we don't want to make any more changes to the header for the time
 
 `git merge <branch-name>`
 
-Now if you reload index.html in the browser, you should see you name.
+Now if you reload index.html in the browser, you should see your name.
 
 So now that we've learned how to start and work on our own projects, let's learn how to work on someone else's. Let's go to https://github.com/flatiron-school-curriculum/hs-ruby-strings-todo. 
 
