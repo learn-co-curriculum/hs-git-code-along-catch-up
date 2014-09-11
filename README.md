@@ -111,9 +111,11 @@ Now if you reload index.html in the browser, you should see you name.
 
 So now that we've learned how to start and work on our own projects, let's learn how to work on someone else's. Let's go to https://github.com/flatiron-school-curriculum/hs-ruby-strings-todo. 
 
-There are two options for working on a project with someone else: forking and cloning. Cloning means your going to make an exact replica of the project on your computer, and it's going to point to that specific remote location. If you committed a change on master, it would show on master in their repository. Forking creates an exact replica of the project in your github account.
+There are two things that you'll need to do while working on a project with someone else: forking and cloning. Cloning means your going to make an exact replica of the project on your computer, and it's going to point to that specific remote location. If you committed a change on master, it would show on master in their repository. Instead of doing that we'll fork the repo to create an exact replica of the project in your github account so we can track changes there.
 
-Let's fork this lab https://github.com/flatiron-school-curriculum/hs-ruby-strings-todo by clicking the `Fork` button in the top right corner. When we do that, we notice the location of the new forked repository is vicfriedman/find-missing-pet. So now that it exists on my github account, we have to clone the project to get it on my computer.
+Let's fork this lab https://github.com/flatiron-school-curriculum/hs-ruby-strings-todo. Follow the link then click the `Fork` button in the top right corner. When you do that, you should notice the location of the new forked repository is your-github-username/hs-ruby-strings-todo. 
+
+So now that it exists on your github account, you'll have to clone the project to get it on my computer. In the right navigation bar on the Github page you should see something that says SSH clone URL and a link that starts with git@github... (if you don't see this click on the blue SSH link). You'll need that git@github link for the following command in your terminal:
 
 `git clone git@github.com:vicfriedman/hs-ruby-strings-todo.git`
 
@@ -121,4 +123,4 @@ Now that we have it up locally, we can cd into the project `cd hs-ruby-strings-t
 
 <!-- After they complete the lab... -->
 
-Now that you completed your lab, make sure it's all pushed up to your version of the repository on github. After that, we're going to create a pull request. A pull request is the best practice for submitting contribution of work to an open source project. To create a pull request, go to your version of the repository on your github account. We'll click the green button in the top left corner. On the next page, we'll want to enter a comment for the pull request, "completed lab" and click submit. This is how I'll be able to review your work and give you feedback on your code. 
+Now that you completed your lab, make sure it's all pushed up to your version of the repository on github. After that, we're going to create a pull request. A pull request is the best practice for submitting contribution of work to an open source project. To create a pull request, go to your version of the repository on your github account. Click the green button in the top left corner. On the next page, enter a comment for the pull request, "completed lab" and click submit. This is how we'll be able to review your work and give you feedback on your code. 
