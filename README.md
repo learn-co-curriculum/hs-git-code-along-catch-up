@@ -5,11 +5,11 @@
   type: catch-up
 ---
 
-## Git Workshop
+## Git Workshop Catch-Up
 
-The goals of the workshop are to get you comfortable with git. Git is a distributed version control and source code management system. 
+Did you miss class? No worries. Follow along with this workshop to learn how to use git and github. 
 
-So what does that mean? Version control is a way to save the history of your work. At every point while writing your code that something works successfully, you'll want to make sure to save that point. Git keeps track of all of those moments that you save. Imagine you keep working, and suddenly EVERYTHING is broken. What would you do? If you used git and saved your work along the way, you could essentially rewind your code history to a working version.
+Git is a distributed version control and source code management system. So what does that mean? Version control is a way to save the history of your work. At every point while writing your code that something works successfully, you'll want to make sure to save that point. Git keeps track of all of those moments that you save. Imagine you keep working, and suddenly EVERYTHING is broken. What would you do? If you used git and saved your work along the way, you could essentially rewind your code history to a working version.
 
 ### So let's actually start a project.
 
