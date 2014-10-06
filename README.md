@@ -24,4 +24,14 @@ A window should pop up asking you where you would like to fork this repository. 
 
 At this point, Github should refresh and you should be on a page that has your github username in the URL. Right now, this lesson still only exists on Github.com. You can't actually edit any of the text yet. It's not yet on your computer. The next step is to `clone` this repository, which means to bring the code from Github.com and put it on your computer.
 
-On the right side of the screen, 
+On the right side of the screen, you'll want to look for the `Clone URL`. It should look something like this:
+
+{% img github_https.png %}
+
+You want to make sure it says `HTTPS Clone url`. If it doesn't, click the link that says `HTTPS` found directly below. We even circled it for you guys.
+
+Once you have the https url, you'll want to copy it. Then, in terminal in your development directory, you'll want to enter `git clone https_url_i_copied_from_github`. You'll want to replace `https_url_i_copied_from_github` with the actual https url you copied. This command, `git clone` will bring the repository from Github and save it on your computer. 
+
+Once it finished cloning, you'll want to type `ls`. You should see a directory with the same name as the repository. In this case, `hs-git-code-along-catch-up`.
+
+POW POW
