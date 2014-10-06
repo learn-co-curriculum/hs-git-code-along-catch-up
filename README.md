@@ -7,120 +7,21 @@
 
 ## Git Workshop Catch-Up
 
-Did you miss class? No worries. Follow along with this workshop to learn how to use git and github. 
+Did you miss class? No worries. Follow along with this workshop to learn how to use Github. 
 
-Git is a distributed version control and source code management system. So what does that mean? Version control is a way to save the history of your work. At every point while writing your code that something works successfully, you'll want to make sure to save that point. Git keeps track of all of those moments that you save. Imagine you keep working, and suddenly EVERYTHING is broken. What would you do? If you used git and saved your work along the way, you could essentially rewind your code history to a working version.
+### What is Github?
 
-### So let's actually start a project.
+Google docs is a great way to store documents online and collaborate with other people on your work. Google docs is great for plain text, excel spreadsheets, and powerpoint presentations, but unfortunately for us, they don’t have a great way to store code. Github is the google docs of code. While there is a ton you can do with Github, today we’re just going to learn how to make a copy of a project located on Github.com and bring it down locally to your computer so you can work on it.
 
-First things first, we need to create directory for our project on our computer that will hold our code. It's considered best practice to hold single projects in their own directories. You wouldn't want to just have everything floating separately on your desktop. Let's make a directory for our project and `cd` into it:
+###Let's use Github!
+The first thing you will need to do is some setup work to be able to use Github.com. Please go to the `Git Environment Setup` lesson in Ironboard and follow the instructions. Once you have completed those steps, come back here to finish out the lesson :)
 
-`mkdir my_website`
-`cd my_website`
+Once you have finished setup, you'll want to the repository of this intro, by clicking the fork button in the top left corner of this page right by the name of the lesson. This link will take you to a Github.com site. This page on Github is the actual location of the code. 
 
-Now that we're in the project, we need to initialize a new git repository. A repository is the git version of our project directory. We have to initialize it on our own computer so that git can start tracking our work. We're basically saying "Hey computer, this is a new git project." Let's do that:
+The next step is to `fork` this repository. Forking is basically like photocopying a worksheet so that you have your own copy to work on. It's basically photocopying the lesson from Flatiron School's account and putting it in your Github account. To fork, you'll want to click the button that says `Fork` in the top righthand corner of the Github page.
 
-`git init` 
+A window should pop up asking you where you would like to fork this repository. You'll want to make sure to select your own Github account.
 
-`git init` creates a `.git` file in your new git project, which contains all the information git needs to sync the local version of your project (the one on your personal computer), with the version on github.com. You'll learn more about github in a minute.
+At this point, Github should refresh and you should be on a page that has your github username in the URL. Right now, this lesson still only exists on Github.com. You can't actually edit any of the text yet. It's not yet on your computer. The next step is to `clone` this repository, which means to bring the code from Github.com and put it on your computer.
 
-Now we're going to create a `README.md` file. Including a README for your project is considered best practice, and we should make one for every project we work on. It tells anyone that is looking at your project exactly what it is that they're looking at, and potentially how to use it. Notice all the instructions for this code-along are in a `README.md`. Let's make a `README.md`, open it, and include a few instructions...
-
-`touch README.md`
-`subl README.md` 
-
-Type in something like this: "This is my personal portfolio. This site will include contact information, a personal bio, and links to all of my work."
-
-Now let's see if git noticed that we made changes to our `README.md`. `git status` tells us what files we have changed. It keeps track of files in two different ways, files that are not staged for commit, and files that are staged for committing.
-
-Now that we've finished editing our README, we want our file to be staged for commit. `git add <file-name>` is how we stage a file. Staging a file for commit is sort of like getting the actors for a play ready behind the curtain. They have to hang out for just a few more minutes before they're all set to go. But what if we did `git add <file-name>` but we actually realize we want to make some changes? That's ok. Just go ahead a make your changes. And after you make those changes, enter `git status` you'll notice the file is no longer staged for commit. It's like that actor suddenly had a wardrobe malfunction and had to run back to his dressing room to get it fixed. Just enter `git add <file-name>` one last time. 
-
-So this time you're actually ready to save that version of your file. Type `git commit -m "the reason I'm saving this goes here"`. We're actually committing the file now. A commit is just like saving your file. It's like taking a snapshot of your code at that exact moment in time. Git keeps track of all the commits you make, sort of like Microsoft word track-changes does. When you edit a Word file with track-changes, you always enter a comment of why you're changing that line. We do the same thing with commits. The `-m` is saying "I'm going to include a commit message here". 
-`git commit -m "I added my personal site readme"`.
-
-Now that git knows about our files, we're going to want to put it up on Github.com, so everyone can see what we've been working on, and if anything ever happens to our computers, our code is still accessible. 
-
-We use [Github](https://github.com/) to store all of our code and share it with others. You should already have set up a Github account on day one of classes. 
-
-###Setting up your project in Github
-
-Because this is a new project, we'll need to set up our remote repository, aka the version located on github.com. We need to go to https://github.com, and click the `+` located in the top right corner. We'll select to create a new repository. We'll be directed to a page that let's us fill out information about our new repository. I like to keep my repository name consistent with what I named my directory on my computer. In this case I'd name it "personal_site". The description is optional, but I'll go ahead and fill out "This is my online portfolio". You can now either chose to make your repositories public or private. I typically make all of my repositories public, so everyone can see it. Open source contributions are incredibly valuable in the tech community. It allows other developers to learn from your work. It also creates a nice history of your work, so potentially down the line when you're looking for internships or jobs, employers can get a good look at all the code you've written. You also have to pay for private repositories, so we'll go ahead and keep it public. And now we'll click `Create Repository`.
-
-At the top, next to "Set up in Desktop", you'll see a line that starts with git@github.com....That's the remote location for our project. Let's copy that. We need to set our local version of our project to point to that. In your terminal in the directory for our project, enter:
-
-`git remote add origin git@github.com:vicfriedman/my_site.git`
-
-`remote` tells our computer "we're adding the remote location"
-
-`origin` is the orginal remote repository, and we're telling it to be `git@github.com:vicfriedman/my_site.git`
-
-9. At this point, our `README.md` is still only located on our computer. Let's go ahead and put it up on the remote version. 
-
-`git push -u origin master`
-
-This is the only time we'll enter this exact command, becuase it's the first time we're pushing our code to the server for this particular project. `push` is saying, go on code, get on up there. The `-u` means "upstream", which is just saying to go up to the github repository. If you get a message prompting you to type in yes/no, type in yes.
-
-Let's go ahead and make the `index.html` page of our site.
-
-`touch index.html`
-`subl index.html`
-
-Now add some basic HTML and added a picture of a cat to the page. You can copy and paste this code into your doc:
-
-```
-<html>
-  <head>
-  <title>My Site</title>
-  </head>
-  <body>
-    <h1>My Site</h1>
-    <img src="http://i.telegraph.co.uk/multimedia/archive/01455/cat_1455103c.jpg"></img>
-  </body>
-</html>
-```
-
-Let's add, commit, and push this file up.
-
-`git add <file-name>`
-`git commit -m "created index.html"`
-`git push`
-
-`git log` is a powerful command that lets you see the history of all your commits. That's also part of why we like to include commit messages. Imagine you're working on a project with 5 other developers. Wouldn't you want them to be able to read a clear and concise message as to what you added to the code base and why? The 7 characters in front of your commit message is the SHA. The SHA is basically the unique identifier of that specific commit.
-
-So far, we've been working on what's considered the `master` branch. Master should always be the stable working version of your code. You never want to break master. This is considered a standard workflow, and is especially important to remember if you are working on a project with more than one developer. So where do you do your work then if you have to keep master stable? We create feature branches. 
-
-First, let's confirm we're on master. `git branch` is the command to check your branch location. It's like `pwd` for git.
-
-So now let's create our new feature branch, and then switch to it. To do this, we type `git checkout -b <branch-name>`. I'm going to name my branch "header", because I'm going to work on a header feature for my site. Now if we check the branch, it should tell us we're on the header branch.
-
-This branch split off from master after I had already created my readme and my index.html, so both of those files will exist on my new branch. Now let's add something to index.html. If we open it in the browser, we can see "My Site" appears at the top. Let's change that to show your name instead (modify the text within `<title>` and `<h1>` tags). Now, let's say you want to add a sub-header and a description, but you don't have enough time right now. You want to save your place though, so we'll go ahead and add, commit, and push these changes to a remote version of my branch.
-
-`git add <file-name>`
-`git commit -m "started working on header"`
-`git push origin header`
-
-My header branch didn't previously exist on github; that last command explicitly tells git to push to the remote location (origin) our new branch (header). 
-
-So let's go back to master `git checkout master` and open `index.html`. You'll notice your name no longer appears in the browser. Those changes only exist on my `header` branch.
-
-We decide that we don't want to make any more changes to the header for the time being. We'll consider that feature complete. We need to merge those completed files in to master. To do this, we need to make sure we're on the master branch. Any time you're merging a feature branch into master, you'll want to be on master. 
-
-`git merge <branch-name>`
-
-Now if you reload index.html in the browser, you should see your name.
-
-So now that we've learned how to start and work on our own projects, let's learn how to work on someone else's. Let's go to https://github.com/flatiron-school-curriculum/hs-ruby-strings-todo. 
-
-There are two things that you'll need to do while working on a project with someone else: forking and cloning. Cloning makes an exact replica of a project on your computer that points to a specific remote location on Github. If you clone without forking then tried to push up a change, it would show up on the other person's repository. OR more likely you would get some kind of message saying that you don't have permission to push code to that person's repository. Instead of doing that, we'll fork the repo to create an exact replica of the project in your Github account so you can track changes there.
-
-Let's fork this lab https://github.com/flatiron-school-curriculum/hs-ruby-strings-todo. Follow the link then click the `Fork` button in the top right corner. When you do that, you should notice the location of the new forked repository is your-github-username/hs-ruby-strings-todo. 
-
-So now that it exists on your github account, you'll have to clone the project to get it on your computer. In the right navigation bar on the Github page you should see something that says "SSH clone URL" and a link that starts with git@github... (if you don't see this click on the blue SSH link). You'll need that git@github link for the following command in your terminal:
-
-`git clone git@github.com:your-github-username/hs-ruby-strings-todo.git`
-
-Now that we have it up locally, we can cd into the project `cd hs-ruby-strings-todo` and begin working on the lab!
-
-<!-- After they complete the lab... -->
-
-Now that you completed your lab, make sure it's all pushed up to your version of the repository on github. After that, we're going to create a pull request. A pull request is best practice for submitting contributions to an open source project. To create a pull request, go to your fork on your github account. Click the green button in the top left corner. On the next page, enter a comment for the pull request, "completed lab" and click submit. This is how we'll be able to review your work and give you feedback on your code. 
+On the right side of the screen, 
