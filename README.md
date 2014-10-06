@@ -32,7 +32,7 @@ You want to make sure it says `HTTPS Clone url`. If it doesn't, click the link t
 
 Once you have the https url, you'll want to copy it. Then, in terminal in your development directory, you'll want to enter `git clone https_url_i_copied_from_github`. You'll want to replace `https_url_i_copied_from_github` with the actual https url you copied. This command, `git clone` will bring the repository from Github and save it on your computer. 
 
-Terminal should prompt you to enter your Github username and password. When you type the password, you won't see the letters appear. I promise you're still typing, it's just a security thing.
+Terminal should prompt you to enter your Github username and password. When you type the password, you won't see the letters appear. I promise you're still typing, it's just a security thing. You'll want to hit enter after you enter both your username and password.
 
 Once it finished cloning, you'll want to type `ls`. You should see a directory with the same name as the repository. In this case, `hs-git-code-along-catch-up`.
 
