@@ -26,7 +26,7 @@ At this point, Github should refresh and you should be on a page that has your g
 
 On the right side of the screen, you'll want to look for the `Clone URL`. It should look something like this:
 
-![img](github_https.png)
+![img](https://raw.githubusercontent.com/flatiron-school-curriculum/hs-git-code-along-catch-up/master/github_https.png?token=7061844__eyJzY29wZSI6IlJhd0Jsb2I6ZmxhdGlyb24tc2Nob29sLWN1cnJpY3VsdW0vaHMtZ2l0LWNvZGUtYWxvbmctY2F0Y2gtdXAvbWFzdGVyL2dpdGh1Yl9odHRwcy5wbmciLCJleHBpcmVzIjoxNDE0MDg1MjEyfQ%3D%3D--4d82707c62b46c9f68db568b4fefad31206c4773)
 
 You want to make sure it says `HTTPS Clone url`. If it doesn't, click the link that says `HTTPS` found directly below. We even circled it for you guys.
 
