@@ -26,7 +26,7 @@ At this point, Github should refresh and you should be on a page that has your g
 
 On the right side of the screen, you'll want to look for the `Clone URL`. It should look something like this:
 
-![IMAGE](github_https.png)
+![img](github_https.png)
 
 You want to make sure it says `HTTPS Clone url`. If it doesn't, click the link that says `HTTPS` found directly below. We even circled it for you guys.
 
