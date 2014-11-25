@@ -6,6 +6,7 @@
 ---
 
 ## Git Study Guide
+<img src="https://s3.amazonaws.com/after-school-assets/ninja.jpg" width="300" align="left" hspace="10">
 
 ### What is GitHub?
 
@@ -36,5 +37,5 @@ Terminal should prompt you to enter your GitHub username and password. When you 
 
 Once it finishes cloning, enter `ls`. You should see a directory with the same name as the repository. In this case, `hs-git-code-along-catch-up`.
 
-You're a forking, cloning, GitHub ninja!
-<img src="https://s3.amazonaws.com/after-school-assets/ninja.jpg" width="400" align="left">
+You're officially a forking, cloning, GitHub ninja!
+
