@@ -7,7 +7,7 @@
 
 ## Git Study Guide
 
-### What is Github?
+### What is GitHub?
 
 As tech savvy programmers, you're probably familiar with Google Docs. Google Docs is a great way to store documents online and collaborate with other people on a project. It's useful for text documents, Excel spreadsheets, and Powerpoint presentations, but unfortunately for us, they don’t have a great way to store code. GitHub is the Google Docs of code. There is a ton you can do with GitHub, but today we’re just going to learn how to make a copy of a project located on github.com and bring it down locally to your computer so you can work on it.
 
@@ -26,7 +26,7 @@ At this point, GitHub should refresh, and you should be on a page that has your 
 
 On the right side of the screen, look for the `Clone URL`. It should look something like this:
 
-![img](https://raw.githubusercontent.com/flatiron-school-curriculum/hs-git-code-along-catch-up/master/github_https.png?token=7061844__eyJzY29wZSI6IlJhd0Jsb2I6ZmxhdGlyb24tc2Nob29sLWN1cnJpY3VsdW0vaHMtZ2l0LWNvZGUtYWxvbmctY2F0Y2gtdXAvbWFzdGVyL2dpdGh1Yl9odHRwcy5wbmciLCJleHBpcmVzIjoxNDE0MDg1MjEyfQ%3D%3D--4d82707c62b46c9f68db568b4fefad31206c4773)
+![img](https://s3.amazonaws.com/after-school-assets/github-https.png)
 
 Make sure it says `HTTPS Clone url`. If it doesn't, click the link that says `HTTPS` found directly below. We even circled it for you guys.
 
@@ -36,5 +36,5 @@ Terminal should prompt you to enter your GitHub username and password. When you 
 
 Once it finishes cloning, enter `ls`. You should see a directory with the same name as the repository. In this case, `hs-git-code-along-catch-up`.
 
-You're a forking, cloning, 
-POW POW
+You're a forking, cloning, GitHub ninja!
+<img src="https://s3.amazonaws.com/after-school-assets/ninja.jpg" width="400" align="left">
