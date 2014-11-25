@@ -5,36 +5,36 @@
   type: catch-up
 ---
 
-## Git Workshop Catch-Up
-
-Did you miss class? No worries. Follow along with this workshop to learn how to use Github. 
+## Git Study Guide
 
 ### What is Github?
 
-Google Docs is a great way to store documents online and collaborate with other people on your work. Google Docs is great for plain text, Excel spreadsheets, and Powerpoint presentations, but unfortunately for us, they don’t have a great way to store code. Github is the Google Docs of code. While there is a ton you can do with Github, today we’re just going to learn how to make a copy of a project located on Github.com and bring it down locally to your computer so you can work on it.
+As tech savvy programmers, you're probably familiar with Google Docs. Google Docs is a great way to store documents online and collaborate with other people on a project. It's useful for text documents, Excel spreadsheets, and Powerpoint presentations, but unfortunately for us, they don’t have a great way to store code. GitHub is the Google Docs of code. There is a ton you can do with GitHub, but today we’re just going to learn how to make a copy of a project located on github.com and bring it down locally to your computer so you can work on it.
 
-###Let's use Github!
-The first thing you will need to do is some setup work to be able to use Github.com. Please go to the `Git Environment Setup` lesson in Ironboard and follow the instructions. Once you have completed those steps, come back here to finish out the lesson :)
+###Let's use GitHub!
+The first thing you will need to do is some setup work to be able to use github.com. Please go to the `Git Environment Setup` lesson in Ironboard and follow the instructions. Once you have completed those steps, come back here to finish out the lesson :)
 
-Once you have finished setup, you'll want to go to the repository of this intro by clicking the fork button in the top right corner of this page. This link will take you to a Github.com site. This page on Github is the actual location of the code. 
+Once you have finished setup, go to the `repository` of this study guide by clicking the fork button in the top right corner of this page. This link will take you to the github.com repository. *A repository is like a project's folder that holds all the code.* A repository contains all of the project files (including documentation), and stores each file's revision history. 
 
-The next step is to `fork` this repository. Forking is basically like photocopying a worksheet so that you have your own copy to work on. It's copying the lesson from Flatiron School's account and putting it in your Github account. To fork, you'll want to click the button that says `Fork` in the top righthand corner of the Github page.
+###Put a Fork in It!
+The next step is to `fork` this repository. *Forking is basically like photocopying a worksheet so that you have your own copy to work on (and so that the original copy stays intact).* It's copying the lesson from Flatiron School's account and putting it in your GitHub account. To fork, click the button that says `Fork` in the top righthand corner of the GitHub page.
 
-A window should pop up asking where you would like to fork this repository. You'll want to make sure to select your own Github account.
+A window should pop up asking where you would like to fork this repository. Be sure to select your own Github account.
 
-At this point, Github should refresh and you should be on a page that has your github username in the URL. Right now, this lesson still only exists on Github.com. You can't actually edit any of the text yet. It's not yet on your computer. The next step is to `clone` this repository, which means to bring the code from Github.com and put it on your computer.
+###Clone Clone Clone Clone Clone
+At this point, GitHub should refresh, and you should be on a page that has your GitHub username in the URL. Right now, this lesson is stored on GitHub.com. You can't actually edit any of the text yet. To be able to make changes, you need to have your own copy locally, or on your computer. To do that, you need to `clone` the repository, which means *grab the code from GitHub.com and put a copy of it on your computer*.
 
-On the right side of the screen, you'll want to look for the `Clone URL`. It should look something like this:
+On the right side of the screen, look for the `Clone URL`. It should look something like this:
 
 ![img](https://raw.githubusercontent.com/flatiron-school-curriculum/hs-git-code-along-catch-up/master/github_https.png?token=7061844__eyJzY29wZSI6IlJhd0Jsb2I6ZmxhdGlyb24tc2Nob29sLWN1cnJpY3VsdW0vaHMtZ2l0LWNvZGUtYWxvbmctY2F0Y2gtdXAvbWFzdGVyL2dpdGh1Yl9odHRwcy5wbmciLCJleHBpcmVzIjoxNDE0MDg1MjEyfQ%3D%3D--4d82707c62b46c9f68db568b4fefad31206c4773)
 
-You want to make sure it says `HTTPS Clone url`. If it doesn't, click the link that says `HTTPS` found directly below. We even circled it for you guys.
+Make sure it says `HTTPS Clone url`. If it doesn't, click the link that says `HTTPS` found directly below. We even circled it for you guys.
 
-Once you have the https url, you'll want to copy it. Then, in terminal in your development directory, you'll want to enter `git clone https_url_i_copied_from_github`. You'll want to replace `https_url_i_copied_from_github` with the actual https url you copied. This command, `git clone` will bring the repository from Github and save it on your computer. 
+Once you have the https url, copy it. Then, go to your development directory using terminal and enter `git clone https_url_i_copied_from_github`. Be sure to replace `https_url_i_copied_from_github` with the actual https url you copied. This command `git clone` will *copy the repository from GitHub and save it on your computer*. 
 
-Terminal should prompt you to enter your Github username and password. When you type the password, you won't see the letters appear. I promise you're still typing, it's just a security thing. You'll want to hit enter after you enter both your username and password.
+Terminal should prompt you to enter your GitHub username and password. When you type the password, you won't see the letters appear. Don't worry about that. It's just a security thing, so keep typing your password in even though you don't see the cursor moving. Hit enter after you enter both your username and password.
 
-Once it finished cloning, you'll want to type `ls`. You should see a directory with the same name as the repository. In this case, `hs-git-code-along-catch-up`.
+Once it finishes cloning, enter `ls`. You should see a directory with the same name as the repository. In this case, `hs-git-code-along-catch-up`.
 
-
+You're a forking, cloning, 
 POW POW
