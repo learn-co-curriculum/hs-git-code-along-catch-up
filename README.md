@@ -8,7 +8,7 @@
 ## Git Study Guide
 
 ### What is GitHub?
-<img src="https://s3.amazonaws.com/after-school-assets/ninja.jpg" width="300" align="left" hspace="10"> As tech savvy programmers, you're probably familiar with Google Docs. Google Docs is a great way to store documents online and collaborate with other people on a project. It's useful for text documents, Excel spreadsheets, and Powerpoint presentations, but unfortunately for us, they don’t have a great way to store code. GitHub is the Google Docs of code. There is a ton you can do with GitHub, but today we’re just going to learn how to make a copy of a project located on github.com and bring it down locally to your computer so you can work on it.
+<img src="https://s3.amazonaws.com/after-school-assets/ninja.jpg" width="300" align="right" hspace="10"> As tech savvy programmers, you're probably familiar with Google Docs. Google Docs is a great way to store documents online and collaborate with other people on a project. It's useful for text documents, Excel spreadsheets, and Powerpoint presentations, but unfortunately for us, they don’t have a great way to store code. GitHub is the Google Docs of code. There is a ton you can do with GitHub, but today we’re just going to learn how to make a copy of a project located on github.com and bring it down locally to your computer so you can work on it.
 
 ###Let's use GitHub!
 The first thing you will need to do is some setup work to be able to use github.com. Please go to the `Git Environment Setup` lesson in Ironboard and follow the instructions. Once you have completed those steps, come back here to finish out the lesson :)
