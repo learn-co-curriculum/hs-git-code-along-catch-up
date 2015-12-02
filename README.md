@@ -32,3 +32,5 @@ Once it finishes cloning, enter `ls`. You should see a directory with the same n
 
 You're officially a forking, cloning, GitHub ninja!
 
+
+<a href='https://learn.co/lessons/hs-git-code-along-catch-up' data-visibility='hidden'>View this lesson on Learn.co</a>
